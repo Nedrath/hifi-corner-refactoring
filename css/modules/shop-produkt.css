@@ -108,19 +108,19 @@
     justify-content: space-between;
     padding-top: 0.5em;
 }
-.info__otherProducts_discount {
+.info__otherProducts_price {
     color: var(--hovedfarvebrun);
     padding-right: 1em;
     font-size: 18px;
     
 }
-.info__otherProducts_price {
+/* .info__otherProducts_discount {
     text-decoration: line-through;
     color: var(--hovedfarvebrun);
     color: rgba(128, 128, 128, 0.63);
     padding-right: 1em;
     
-}
+} */
 .info__produktTekst {
     padding-bottom: 1.5em;
     font-size: 15.5px;

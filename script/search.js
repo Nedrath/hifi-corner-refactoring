@@ -1,18 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
     let search = document.getElementById('search-input')
-  let searchclick = document.querySelector('.fa-search')
-  
-     fetch('../data/produkts.json')
-         .then(response => response.json())
-         .then(data => {
-             //console.log(data);
-             searchclick.addEventListener("click", function(event) {
-                 
-                let results =  data.produkter.filter(produkt => {
-                   return  produkt.title.toLowerCase().includes(search.value.toLowerCase())  
-                 });
+    let searchclick = document.querySelector('.fa-search')
 
-                if(results) {
+    fetch("https://hifi-corner.herokuapp.com/api/v1/products", {
+        "method": "GET"
+    })
+        .then(response => response.json())
+        .then(data => {
+            //console.log(data);
+            searchclick.addEventListener("click", function (event) {
+
+                let results = data.filter(products => {
+                    return products.make.toLowerCase().includes(search.value.toLowerCase())
+                });
+
+                if (results) {
 
                     let allelm = document.querySelectorAll('.thumbnail')
                     allelm.forEach(element => {
@@ -20,24 +22,24 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
                     results.forEach(element => {
                         //console.log(element.id)
-                        let selected = document.getElementById('p'+element.id)
+                        let selected = document.getElementById('p' + element.sku)
                         selected.style.display = 'block'
-                        
+
                     });
-                    
+
                     window.setInterval(function () {
-                        if(search.value == ''){
-                            allelm.forEach( elm => {
+                        if (search.value == '') {
+                            allelm.forEach(elm => {
                                 elm.style.display = 'block'
                             })
                         }
 
-                    },500)
+                    }, 500)
 
                 }
-                
-             });
-         });
 
-        
- });
+            });
+        });
+
+
+});
