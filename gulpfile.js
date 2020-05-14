@@ -1,5 +1,6 @@
 
 const gulp = require('gulp');
+const ejs = require('gulp-ejs');
 const rename = require('gulp-rename');
 const connect = require('gulp-connect');
 
@@ -7,9 +8,10 @@ const connect = require('gulp-connect');
 
 function html() {
     return gulp
-        .src("./src/html/*html")
+        .src("./src/html/*ejs")
+        .pipe(ejs())
         .pipe(rename(function (path) {
-            path.extname = ".fnyf"  
+            path.extname = ".html"  
         }))
         .pipe(gulp.dest("./tmp"))
         .pipe(connect.reload());
@@ -17,7 +19,7 @@ function html() {
 
 function watchHTML() {
     return gulp
-        .watch("./src/html/*.html", {
+        .watch("./src/html/*.ejs", {
             ignoreInitial: false
         }, html);
 }
