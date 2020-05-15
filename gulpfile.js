@@ -2,20 +2,20 @@
 const connect = require('gulp-connect');
 const { watchHTML, buildHTML } = require('./tasks/html');
 const { watchSCSS, buildSCSS } = require('./tasks/scss');
-// const { watchJS, buildJS } = require('./tasks/js');
+const { watchJS, buildJS } = require('./tasks/js');
 const { watchIMG, buildIMG } = require('./tasks/images');
-const { watchMEDIA, buildMEDIA } = require('./tasks/media');
+// const { watchMEDIA, buildMEDIA } = require('./tasks/media');
 
 
 function dev(done) {
     watchHTML();
     watchSCSS();
-    // watchJS();
+    watchJS();
     watchIMG();
-    watchMEDIA();
+    // watchMEDIA();
     connect.server({
         livereload: true,
-        port: 3000,
+        port: 8080,
         root: "tmp"
     })
     done()
@@ -24,9 +24,9 @@ function dev(done) {
 function build(done) {
     buildHTML();
     buildSCSS();
-    // buildJS();
+    buildJS();
     buildIMG();
-    buildMEDIA();
+    // buildMEDIA();
     done()
 }
 

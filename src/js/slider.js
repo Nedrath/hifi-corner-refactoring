@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 index = 0;
             }
             skift();
-            nyFoto = "images/slider/" + fotoListe[index] + ".jpg";
+            nyFoto = "./assets/img/slider/" + fotoListe[index] + ".jpg";
             document.querySelector("#big_img").setAttribute("src", nyFoto);
             document.querySelector("#slider__text_name").textContent = textListe[index];
         });
@@ -29,14 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 index = fotoListe.length - 1;
             }
             skift();
-            nyFoto = "images/slider/" + fotoListe[index] + ".jpg";
+            nyFoto = "./assets/img/slider/" + fotoListe[index] + ".jpg";
             document.querySelector("#big_img").setAttribute("src", nyFoto);
             document.querySelector("#slider__text_name").textContent = textListe[index];
         });
 
 
         function skift() {
-            $("#big_img").attr("src", "images/slider/" + fotoListe[index] + ".jpg");
+            $("#big_img").attr("src", "./assets/img/slider/" + fotoListe[index] + ".jpg");
             console.log(index);
 
         }
