@@ -1,0 +1,28 @@
+{
+  "name": "hifi-corner-refactoring",
+  "version": "1.0.0",
+  "description": "refactoring af hifi-corner",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nedrath/hifi-corner-refactoring.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nedrath/hifi-corner-refactoring/issues"
+  },
+  "homepage": "https://github.com/Nedrath/hifi-corner-refactoring#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-ejs": "^5.1.0",
+    "gulp-rename": "^2.0.0"
+  },
+  "dependencies": {}
+}
