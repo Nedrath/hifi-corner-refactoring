@@ -8,7 +8,7 @@ const connect = require('gulp-connect');
 
 function html() {
     return gulp
-        .src("./src/html/*ejs")
+        .src("./src/html/templates/*ejs")
         .pipe(ejs())
         .pipe(rename(function (path) {
             path.extname = ".html"  
@@ -19,7 +19,7 @@ function html() {
 
 function watchHTML() {
     return gulp
-        .watch("./src/html/*.ejs", {
+        .watch("./src/html/**/*.ejs", {
             ignoreInitial: false
         }, html);
 }
