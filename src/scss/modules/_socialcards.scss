@@ -1,7 +1,7 @@
 .section {
     height: 750px;
     width: 100%;
-    font-family: var( --main-font);
+    font-family: var(--main-font);
 }
 
 .social-cards {
@@ -75,13 +75,12 @@
     text-align: center;
 }
 
-.textsContainer__blok-items-title{
+.textsContainer__blok-items-title {
     color: var(--hovedfarvebrun);
     border: 1px solid white;
     width: 100px;
     padding: 10px;
     margin: 0 85px;
     text-align: center;
-    margin-left:100px;
+    margin-left: 100px;
 }
-

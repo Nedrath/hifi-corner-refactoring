@@ -12,7 +12,7 @@
 .thumbnail {
     text-align: center;
 }
-.thumbnail__img{
+.thumbnail__img {
     max-width: 150px;
     height: 150px;
     object-fit: contain;
@@ -29,7 +29,7 @@
 .thumbnail__pris {
     display: inline-block;
     font-weight: bold;
-    color: #A39161;
+    color: #a39161;
 }
 
 .thumbnail__pris_tilbud {
@@ -43,7 +43,7 @@
     display: block;
     text-transform: uppercase;
     margin: auto;
-    background: #A39161;
+    background: #a39161;
     color: white;
     font-weight: bold;
     height: 33px;
@@ -58,5 +58,4 @@
 
 .thumbnail__button_udsolgt {
     display: none;
-
 }

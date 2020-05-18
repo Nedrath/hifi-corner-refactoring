@@ -35,7 +35,6 @@
     background: black;
 }
 
-
 .shop-produkt__billede {
     grid-area: billede;
     display: grid;
@@ -95,7 +94,6 @@
     color: var(--hovedfarvebrun);
     padding-right: 1em;
     font-size: 18px;
-    
 }
 /* .info__otherProducts_discount {
     text-decoration: line-through;
@@ -153,7 +151,7 @@
     font-size: 13px;
 }
 .farver__vaelg {
-    background: #E1E1E1; 
+    background: #e1e1e1;
     width: 35%;
     padding: 0.4em;
     margin: -5px;
@@ -193,7 +191,7 @@
     text-align: center;
     margin: 0;
 }
-.betaling__box__antal{
+.betaling__box__antal {
     height: 52px;
     width: 55px;
     font-size: 25px;
@@ -257,7 +255,6 @@
 .additional__table {
     border-collapse: collapse;
 }
-
 
 .breadcrumbs_less-margin {
     margin-bottom: 1.3em;
