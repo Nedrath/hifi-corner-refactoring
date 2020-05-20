@@ -1,75 +1,55 @@
-.footer {
-    height: 74px;
+.footer-grid {
+    display: grid;
+    max-height: 74px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-areas: "location policy payment social";
     background: #a39161;
-    display: flex;
-    justify-content: space-between;
+    padding: 0.5em;
 
-    &__hojre {
-        margin-right: 25px;
+    .location {
+        grid-area: location;
 
-        .social {
-            width: 75px;
-            margin: 0px;
-        }
-
-        .hojre-betaling {
-            position: relative;
-            top: 10px;
-            padding-right: 15px;
-        }
-
-        .fa-youtube {
-            position: relative;
-            left: -0.5px;
-        }
-
-        .circle {
-            border: 1px solid white;
-            display: inline-block;
-            border-radius: 50%;
-            width: 22px;
-            height: 22px;
-            position: relative;
-
-            &__social-link {
-                position: relative;
-                font-size: 11px;
-                color: white;
-                margin: 0px;
-                top: -3px;
-                right: -2px;
-                padding: 6px 4px;
-                cursor: pointer;
-            }
+        &__text {
+            font-size: 10px;
+            line-height: 1px;
         }
     }
 
-    &__venstre {
-        display: flex;
-        position: relative;
+    .policy {
+        grid-area: policy;
+        align-self: center;
+        
 
-        .venstre-tekst {
-            padding-top: 20px;
-            padding-left: 20px;
-
-            &__p {
-                position: relative;
-                font-size: 10px;
-                margin: 0px;
-                font-weight: bold;
-                line-height: 12px;
-            }
+        &__links {
+            font-size: 11px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
         }
+    }
 
-        .venstre-links {
-            padding-top: 15px;
-            padding-left: 50px;
+    .payment {
+        grid-area: payment;
+        align-self: center;
 
-            &__refund {
-                font-size: 14px;
-                color: white;
-                text-transform: uppercase;
-            }
+        &__img {
+            height: 35px;
+        }
+    }
+
+    .social {
+        grid-area: social;
+        place-self: center;
+
+        &__icon {
+            font-size: 13px;
+            color: white;
+        }
+        &__circle {
+            color: white;
+            font-size: 29px;
+            padding-top: 2px;
         }
     }
 }

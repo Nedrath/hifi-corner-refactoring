@@ -1,9 +1,8 @@
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="footer__venstre">
       <div class="venstre-tekst">
         <p class="venstre-tekst__p">HI-FI Corner</p>
-        <p class="venstre-tekst__p">Edinburgh 2 joppa Road EH 15 2EU
-        </p>
+        <p class="venstre-tekst__p">Edinburgh 2 joppa Road EH 15 2EU</p>
         <p class="venstre-tekst__p">Falkirk 44 Cow Wynd FK1 1PU</p>
       </div>
       <div class="venstre-links">
@@ -26,14 +25,47 @@
         <i class="fab fa-instagram circle__social-link"></i>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
-Lav footer om til et GRID og sæt det op i med BEM således
+<footer class="footer-grid">
 
-Footer  
-Footer__address
-footer__legal
-footer__payment
-footer__social
+  <div class="location">
+    <p class="location__text">HI-FI Corner</p>
+    <p class="location__text">Edinburgh 2 joppa Road EH 15 2EU</p>
+    <p class="location__text">Falkirk 44 Cow Wynd FK1 1PU</p>
+  </div>
 
-så giver scss bem struktur bedre mening med nesting
+  <div class="policy">
+    <a class="policy__links" href="#">Return & Refunds</a>
+    <a class="policy__links" href="#">Privacy Policy</a>
+  </div>
+
+  <div class="payment">
+    <img class="payment__img" src="/assets/img/footer/betalings-muligheder.png" alt="">
+  </div>
+
+  <div class="social">
+
+    <span class="fa-stack">
+    <i class="fab fa-stack-1x fa-facebook-f social__icon"></i>
+    <i class="far fa-stack-2x fa-circle social__circle"></i>
+    </span>
+
+    <span class="fa-stack">
+      <i class="fab fa-stack-1x fa-youtube social__icon"></i>
+      <i class="far fa-stack-2x fa-circle social__circle"></i>
+    </span>
+
+    <span class="fa-stack">
+      <i class="fab fa-stack-1x fa-twitter social__icon"></i>
+      <i class="far fa-stack-2x fa-circle social__circle"></i>
+    </span>
+
+    <span class="fa-stack">
+      <i class="fab fa-stack-1x fa-instagram social__icon"></i>
+      <i class="far fa-stack-2x fa-circle social__circle"></i>
+    </span>
+
+  </div>
+
+</footer>
