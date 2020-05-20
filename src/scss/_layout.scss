@@ -46,7 +46,7 @@
 /*/ GRID TIL SHOP-PRODUKT SIDEN /*/
 .shop-produkt {
     display: grid;
-    width: 100%;
+    // width: 100%;
     height: calc(100% - 175px - 30px - 1.5em - 0.8em - 2em);
     /* grid-template-rows:  repeat(5, auto); */
     grid-template-rows: auto auto auto auto auto;
@@ -61,3 +61,8 @@
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
+
+// .footer-grid {
+//     display: grid;
+
+// }
