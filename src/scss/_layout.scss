@@ -3,7 +3,7 @@
     display: grid;
 }
 
-.brands_section {
+.brands-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -23,7 +23,7 @@
     justify-content: center;
 }
 
-.shop_aside_left_top {
+.shop-aside-left-top {
     width: 220px;
     background-color: #e1e1e1;
     grid-column: 1/2;
@@ -33,7 +33,7 @@
     font-size: 14px;
 }
 
-.shop_aside_left_bottom {
+.shop-aside-left-bottom {
     width: 220px;
     background-color: #e1e1e1;
     grid-column: 1/2;
