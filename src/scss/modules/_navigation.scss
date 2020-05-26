@@ -1,0 +1,27 @@
+.navigation {
+
+    &__linkbox {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .link {
+        cursor: pointer;
+        list-style-type: none;
+
+        &__a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            text-align: center;
+            font-weight: bold;
+        }
+        &__a_active.active {
+            color: var(--hovedfarvebrun);
+        }
+        &__a:hover {
+            color: var(--hovedfarvebrun);
+        }
+    }
+}

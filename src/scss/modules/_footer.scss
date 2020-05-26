@@ -1,12 +1,4 @@
 .footer-grid {
-    display: grid;
-    max-height: 74px;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
-    grid-template-areas: "location policy payment social";
-    background: #a39161;
-    padding: 0.5em;
-
     .location {
         grid-area: location;
 
@@ -19,7 +11,6 @@
     .policy {
         grid-area: policy;
         align-self: center;
-        
 
         &__links {
             font-size: 11px;

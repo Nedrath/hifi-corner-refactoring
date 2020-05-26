@@ -1,21 +1,3 @@
-.hero {
-    width: 100%;
-    display: grid;
-}
-
-.brands-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.double_article_box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px;
-    border: 20px solid white;
-    margin: 0 10%;
-}
-
 .wrapper_kategori {
     display: grid;
     grid-template-columns: 250px 855px 250px;
@@ -23,42 +5,28 @@
     justify-content: center;
 }
 
-.shop-aside-left-top {
-    width: 220px;
-    background-color: #e1e1e1;
-    grid-column: 1/2;
-    grid-row: 1/3;
-    margin-top: 120px;
-    margin-left: 25px;
-    font-size: 14px;
+.navigation {
+    background-color: #000000;
+    width: 100%;
+    padding: 25px 30%;
 }
 
-.shop-aside-left-bottom {
-    width: 220px;
-    background-color: #e1e1e1;
-    grid-column: 1/2;
-    grid-row: 3/4;
-    margin-left: 25px;
-    margin-top: 15px;
-    padding-bottom: 8px;
-}
-
-/*/ GRID TIL SHOP-PRODUKT SIDEN /*/
-.shop-produkt {
+.footer-grid {
     display: grid;
-    // width: 100%;
-    height: calc(100% - 175px - 30px - 1.5em - 0.8em - 2em);
-    /* grid-template-rows:  repeat(5, auto); */
-    grid-template-rows: auto auto auto auto auto;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: 0.8fr 0.9fr;
-    grid-template-areas:
-        "billede info"
-        "billede farver"
-        "billede betaling"
-        "thumbnail additional"
-        "specifikation .";
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    max-height: 74px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-areas: "location policy payment social";
+    background: #a39161;
+    padding: 0.5em;
 }
 
+.head {
+    padding: 5px;
+    padding-top: 30px;
+    height: 88px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--hovedfarvebrun);
+}

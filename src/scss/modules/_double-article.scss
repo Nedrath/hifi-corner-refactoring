@@ -1,0 +1,39 @@
+.double-article-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    border: 20px solid white;
+    margin: 0 10%;
+
+    .stocked-brands {
+        padding: 0 3%;
+
+        &__text {
+            color: #a39161;
+            font-size: 13px;
+        }
+        &__logos {
+            max-width: 400px;
+        }
+    }
+    .brands {
+        background-color: #262626;
+        padding: 2% 3%;
+        border: 1px solid black;
+
+        &__headline {
+            color: #a39161;
+            font-size: 1.5em;
+            margin: 0;
+        }
+        &__text {
+            color: white;
+            font-size: 13px;
+        }
+        &__link {
+            color: #a39161;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+    }
+}
