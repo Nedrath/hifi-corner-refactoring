@@ -1,0 +1,19 @@
+
+.navigation {
+    background-color: #000000;
+    width: 100%;
+    padding: 25px 30%;
+}
+
+.footer-grid {
+    display: grid;
+    max-height: 74px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-areas: "location policy payment social";
+    background: #a39161;
+    padding: 0.5em;
+}
+
+
+

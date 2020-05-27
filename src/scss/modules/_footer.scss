@@ -1,0 +1,46 @@
+.footer-grid {
+    .location {
+        grid-area: location;
+
+        &__text {
+            font-size: 10px;
+            line-height: 1px;
+        }
+    }
+
+    .policy {
+        grid-area: policy;
+        align-self: center;
+
+        &__links {
+            font-size: 11px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+        }
+    }
+
+    .payment {
+        grid-area: payment;
+        align-self: center;
+
+        &__img {
+            height: 35px;
+        }
+    }
+
+    .social {
+        grid-area: social;
+        place-self: center;
+
+        &__icon {
+            font-size: 13px;
+            color: white;
+        }
+        &__circle {
+            color: white;
+            font-size: 29px;
+            padding-top: 2px;
+        }
+    }
+}

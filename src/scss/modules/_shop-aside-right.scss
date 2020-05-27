@@ -1,0 +1,25 @@
+.shop-aside-right {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    margin-top: 120px;
+    margin-left: 5%;
+
+    &__brands {
+        font-size: 12px;
+        margin: 4% 4%;
+        cursor: pointer;
+    }
+
+    &__manufacturer {
+        color: #a39161;
+        font-weight: bold;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    &__viewAll {
+        color: #a39161;
+        font-size: 12px;
+        cursor: pointer;
+    }
+}

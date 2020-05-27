@@ -1,0 +1,78 @@
+.head-kontakt {
+    padding: 20px;
+    border-bottom: 1px solid var(--hovedfarvebrun);
+    font-size: 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+
+    .menu__icons {
+        margin-right: 10px;
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .menu__icons_subscribebtn {
+        color: white;
+        border-style: none;
+        background-color: rgb(40, 143, 212);
+        width: 100px;
+        border-radius: 3px;
+        height: 24px;
+        margin-right: 20px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3px;
+    }
+    .head-menu__subscribe_btn-mail {
+        padding: 2px;
+    }
+}
+
+.head {
+    padding: 5px;
+    padding-top: 30px;
+    height: 88px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--hovedfarvebrun);
+
+    .logo-img {
+        height: 45px;
+        width: 45px;
+    }
+    .header-functions {
+        display: flex;
+        padding: 10px;
+        color: white;
+        width: 700px;
+        justify-content: space-between;
+
+        .searchbox__input {
+            padding: 5px;
+            width: 300px;
+        }
+        .fa-search {
+            position: relative;
+            left: -30px;
+            color: grey;
+        }
+    }
+    .head-menu {
+        display: flex;
+        font-size: 1.5em;
+        justify-content: space-between;
+
+        .menu__icons_space {
+            margin-right: 10px;
+            width: 130px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+    }
+}

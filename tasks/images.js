@@ -5,7 +5,7 @@ const imagemin = require('gulp-imagemin')
 
 
 function image() {
-    return gulp.src('./src/img/*')
+    return gulp.src('./src/img/**/*')
         .pipe(imagemin([
             imagemin.mozjpeg({ quality: 75, progressive: true }),
         ]))
@@ -14,7 +14,7 @@ function image() {
 }
 
 function buildIMG() {
-    return gulp.src('./src/img/*')
+    return gulp.src('./src/img/**/*')
         .pipe(imagemin([
             imagemin.mozjpeg({ quality: 75, progressive: true }),
         ]))

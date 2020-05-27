@@ -1,0 +1,48 @@
+.sortby__menu {
+    grid-column: 2/4;
+    margin-left: 8px;
+    grid-row: 1/2;
+    margin-top: 8%;
+}
+.sortby__box {
+    background-color: #e1e1e1;
+    display: grid;
+    grid-template-columns: 220px auto 220px;
+    grid-template-rows: 30px 30px 30px;
+    width: 841px;
+}
+
+.sortby__label-venstre {
+    grid-column: 1;
+    padding: 0 8px;
+}
+
+.sortby__hoejre {
+    grid-column: 3;
+}
+
+.sortby__arrow {
+    color: #9c9c9c;
+}
+
+.sortby__icons {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.sortby__icons-1 {
+    color: #9c9c9c;
+}
+
+.sortby__icons-2 {
+    color: #9c9c9c;
+}
+.sortby__icons-2,
+.sortby__icons-1:hover {
+    color: #a39161;
+}
+
+.myList {
+    height: 28px;
+    background-color: white;
+}

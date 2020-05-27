@@ -5,54 +5,54 @@
 <main>
 
   <section class="hero">
-    <img class="hero__top_image" src='/images/background_forside.jpg' alt='Hero image with logo'>
-    <img class="hero__logo" src="/images/hi_fi_logo.png">
-    <img class="hero__bottom_image" src='/images/message_background.jpg' alt='Image with info'>
-    <h1 class="hero__image_text">OUR EDINBURGH SHOWROOM HAS NOW MOVED<br>TO STUNNING NEW PREMISES ON JOPPA ROAD
+    <img class="hero__top-image" src='./assets/img/background_forside.jpg' alt='Hero image with logo'>
+    <img class="hero__logo" src="./assets/img/hi_fi_logo.png">
+    <img class="hero__bottom-image" src='./assets/img/message_background.jpg' alt='Image with info'>
+    <h1 class="hero__image-text">OUR EDINBURGH SHOWROOM HAS NOW MOVED<br>TO STUNNING NEW PREMISES ON JOPPA ROAD
     </h1>
   </section>
 
-  <section class="body__slider">
-    <p id="slider__text_name">PRIMULUNA SOUNDS</p>
-    <i class="pile fas fa-chevron-left" id="back"></i>
-    <img id="big_img" src="/images/slider/amplifier.jpg" alt="slider" height="665">
-    <i class="pile fas fa-chevron-right" id="next"></i>
+  <section class="frontpage-slider">
+    <p class="frontpage-slider__text-name">PRIMULUNA SOUNDS</p>
+    <i class="pile fas fa-chevron-left frontpage-slider__back" id="back"></i>
+    <img class="frontpage-slider__big-img" src="./assets/img/slider/amplifier.jpg" alt="slider" height="665">
+    <i class="pile fas fa-chevron-right frontpage-slider__next" id="next"></i>
   </section>
 
-  <section class="section">
-    <div class="social-cards">
-      <div class="social-cards__box1">
-        <a href="www.facebook.com"><i class="fab fa-facebook social-cards__icons"></i></a>
+  <section class="social-section">
+    <div class="cards">
+      <div class="cards__box1">
+        <a href="www.facebook.com"><i class="fab fa-facebook cards__icons"></i></a>
       </div>
-      <div class="social-cards__box2">
-        <a href="www.blogger.com"><i class="fab fa-blogger  social-cards__icons"></i></a>
+      <div class="cards__box2">
+        <a href="www.blogger.com"><i class="fab fa-blogger cards__icons"></i></a>
       </div>
-      <div class="social-cards__box3">
-        <a href="www.twitter.com"><i class="fab fa-twitter social-cards__icons social-cards__icons_modified "></i></a>
+      <div class="cards__box3">
+        <a href="www.twitter.com"><i class="fab fa-twitter cards__icons cards__icons_modified "></i></a>
       </div>
     </div>
 
     <article class="textsContainer">
       <div class="textsContainer__blok">
-        <div class="textsContainer__blok-items">
-          <h3 class="textsContainer__blok-items-title1">HISTORY</h3>
-          <p class="textsContainer__blok-items-paragraph">
+        <div class="items">
+          <h3 class="items__title">HISTORY</h3>
+          <p class="items__paragraph">
             ESTABLISHED IN THE LATE 1960S, OUR FAMILY OWNED BUSINESS IS BASED
             IN EDINBURGH AND FALKIRK, SERVICING CUSTOMERS ACROSS THE UK.
           </p>
         </div>
 
-        <div class="textsContainer__blok-items">
-          <h3 class="textsContainer__blok-items-title">NEWS</h3>
-          <p class="textsContainer__blok-items-paragraph">
+        <div class="items">
+          <h3 class="items__title">NEWS</h3>
+          <p class="items__paragraph">
             CHECK OUT OUR LATEST NEWS STORIES FOR ALL THE UP TO DATE HI-FI CORNER
             PRODUCTS AND LAUNCHES
           </p>
         </div>
 
-        <div class="textsContainer__blok-items">
-          <h3 class="textsContainer__blok-items-title">SHOP</h3>
-          <p class="textsContainer__blok-items-paragraph">
+        <div class="items">
+          <h3 class="items__title">SHOP</h3>
+          <p class="items__paragraph">
             HAVE A LOOK IN OUR ONLINE SHOP FOR GREAT PRODUCTS AND DEALS.
           </p>
         </div>
@@ -64,5 +64,5 @@
 </main>
 
 <%- include ('../partials/footer.ejs') %>
-<script src="/js/slider.js"></script>
+<script src="/assets/js/slider.js"></script>
 <%- include ('../partials/after-footer.ejs') %>
