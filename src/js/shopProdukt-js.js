@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
             // PRODUKT BILLEDE SECTION
-            let billedeSection = document.querySelector(".shop-produkt__billede")
+            let billedeSection = document.querySelector(".produkt-billede")
             billedeSection.setAttribute("data-id", data.sku)
             billedeSection.id = 'p' + data.sku
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 `;
 
             // THUMBNAIL SECTION
-            // let thumbnailSection = document.querySelector(".shop-produkt__thumbnail")
+            // let thumbnailSection = document.querySelector(".produkt__thumbnail")
             // thumbnailSection.setAttribute("data-id", data.sku)
             // thumbnailSection.id = 'p' + data.sku
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             //     data.more_views.forEach(element => {
 
             //         thumbnailSection.innerHTML += `
-            //         <img class="thumbnail__small-pictures" src="/images/Produktbilleder/${element}" alt="">
+            //         <img class="produkt-thumbnail__small-pictures" src="/images/Produktbilleder/${element}" alt="">
             //         `
             //     });
             // }
@@ -101,12 +101,12 @@ document.addEventListener('DOMContentLoaded', function () {
             // signalPowerSection.innerText = data.description["Signal-to-Noise-Ratio: Power Amp Direct IN"]
 
             // PRODUKT INFO SECTION
-            let produktOverskrift = document.querySelector(".info__overskrift")
+            let produktOverskrift = document.querySelector(".produkt-info__overskrift")
             produktOverskrift.setAttribute("data-id", data.sku)
             produktOverskrift.id = 'p' + data.sku
             produktOverskrift.innerHTML = `${data.make}  ${data.model}`;
 
-            let productBrand = document.querySelector(".info__otherProducts_brand")
+            let productBrand = document.querySelector(".otherProducts__brand")
             productBrand.setAttribute("data-id", data.sku)
             productBrand.id = 'p' + data.sku
             productBrand.innerHTML = `${data.make} `;
@@ -118,12 +118,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // FEJL manglelr en if no discount price show normal price only
 
-            let productlPrice = document.querySelector(".info__otherProducts_price")
+            let productlPrice = document.querySelector(".otherProducts__price")
             productlPrice.setAttribute("data-id", data.sku)
             productlPrice.id = 'p' + data.sku
             productlPrice.innerHTML = `${data.price} kr`;
 
-            let productText = document.querySelector(".info__produktTekst")
+            let productText = document.querySelector(".produkt-info__produktTekst")
             productText.setAttribute("data-id", data.sku)
             productText.id = 'p' + data.sku
             productText.innerHTML = `${data.description}`;

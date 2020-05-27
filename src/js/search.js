@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 if (results) {
 
-                    let allelm = document.querySelectorAll('.thumbnail')
+                    let allelm = document.querySelectorAll('.thumbnail-box')
                     allelm.forEach(element => {
                         element.style.display = 'none'
                     });

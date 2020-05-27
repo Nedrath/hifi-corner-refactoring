@@ -1,0 +1,35 @@
+.frontpage-slider {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    background-color: white;
+
+    &__text-name {
+        color: #c0ab9f;
+        font-size: 30px;
+        margin-left: 90px;
+        width: 90px;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 20;
+    }
+    &__big-img {
+        grid-area: 1/1/-1/-1;
+        margin: 0 auto;
+    }
+    &__back {
+        grid-area: 1/1/-1/2;
+        text-align: center;
+        font-size: 5em;
+        color: #c0ab9f;
+        align-self: center;
+    }
+    &__next {
+        grid-area: 1/12/-1/-1;
+        text-align: center;
+        font-size: 5em;
+        color: #c0ab9f;
+        align-self: center;
+    }
+
+}

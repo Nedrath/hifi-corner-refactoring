@@ -1,0 +1,278 @@
+.wrapper-shop-produkt {
+    width: 85%;
+    background: black;
+    background: white;
+    margin: auto;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+
+    .hero-reklame {
+        height: 175px;
+        width: 100%;
+        background: white;
+        margin: auto;
+        padding-bottom: 0.8em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+
+        &__billede {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .breadcrumbs_less-margin {
+        margin-bottom: 1.3em;
+    }
+
+    &__shop-produkt {
+        display: grid;
+        height: calc(100% - 175px - 30px - 1.5em - 0.8em - 2em);
+        /* grid-template-rows:  repeat(5, auto); */
+        grid-template-rows: auto auto auto auto auto;
+        /* grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: 0.8fr 0.9fr;
+        grid-template-areas:
+            "billede info"
+            "billede farver"
+            "billede betaling"
+            "thumbnail additional"
+            "specifikation .";
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    .produkt-billede {
+        grid-area: billede;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid rgba(128, 128, 128, 0.178);
+    }
+
+    .produkt-thumbnail {
+        grid-area: thumbnail;
+
+        &__views {
+            color: var(--hovedfarvebrun);
+            padding-bottom: 1em;
+            text-transform: uppercase;
+        }
+
+        &__small-pictures {
+            max-width: 15%;
+            max-height: 15%;
+        }
+    }
+
+    .produkt__specifikation {
+        grid-area: specifikation;
+
+        &__overskrift {
+            text-transform: uppercase;
+            color: var(--hovedfarvebrun);
+        }
+
+        &__td {
+            padding-left: 4em;
+        }
+    }
+    .produkt-info {
+        grid-area: info;
+        padding-left: 1.5em;
+        margin-bottom: 1em;
+
+        &__overskrift {
+            color: var(--hovedfarvebrun);
+            margin: 0;
+        }
+        .otherProducts {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0.5em;
+
+            &__navn {
+                color: var(--hovedfarvebrun);
+                font-weight: 600;
+            }
+            &__price {
+                color: var(--hovedfarvebrun);
+                padding-right: 1em;
+                font-size: 18px;
+            }
+            &__brand {
+                cursor: pointer;
+            }
+        }
+        &__produktTekst {
+            padding-bottom: 1.5em;
+            font-size: 15.5px;
+            line-height: 1.5em;
+        }
+        .buttons-box {
+            display: flex;
+            justify-content: space-around;
+            max-width: 580px;
+            margin-right: 1.5em;
+
+            &__buttons {
+                background: var(--hovedfarvebrun);
+                color: white;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 700;
+                padding: 1em;
+                line-height: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+    .farver {
+        grid-area: farver;
+        border: 2px solid rgba(128, 128, 128, 0.199);
+        padding-right: 1.3em;
+        padding-left: 1.5em;
+        margin-left: 1.65em;
+        padding-bottom: 1.5em;
+        height: 150px;
+
+        .tekstBox {
+            display: flex;
+            justify-content: space-between;
+
+            &__venstre {
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--hovedfarvebrun);
+
+                &_rød {
+                    color: red;
+                }
+            }
+            &__højre {
+                color: rgb(228, 0, 0);
+                font-size: 13px;
+            }
+        }
+        .valg-knapper {
+            background: #e1e1e1;
+            width: 35%;
+            padding: 0.4em;
+            margin: -5px;
+            margin-left: 0.1em;
+
+            &__Knap {
+                font-size: 15px;
+                padding-left: 0.4em;
+            }
+        }
+    }
+    .betaling {
+        grid-area: betaling;
+        border: 2px solid rgba(128, 128, 128, 0.089);
+        margin-left: 1.65em;
+        background: rgba(128, 128, 128, 0.199);
+        padding-left: 1em;
+        padding-top: 1em;
+        padding-right: 1em;
+
+        .money-box {
+            display: flex;
+            justify-content: space-evenly;
+            width: 350px;
+
+            &__button {
+                background: var(--hovedfarvebrun);
+                color: white;
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 700;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                cursor: pointer;
+                height: 53px;
+                width: 210px;
+                text-align: center;
+                margin: 0;
+            }
+            &__antal {
+                height: 52px;
+                width: 55px;
+                font-size: 25px;
+                text-align: center;
+            }
+            &__qty {
+                color: var(--hovedfarvebrun);
+                font-size: 1.2em;
+                font-weight: 700;
+                display: flex;
+                text-align: center;
+                align-items: center;
+            }
+        }
+        &__OR {
+            color: var(--hovedfarvebrun);
+            font-size: 1.2em;
+            margin-left: 11em;
+            margin-top: 10px;
+        }
+        &__checkout {
+            width: 180px;
+            border-radius: 25px;
+            margin-left: 8.5em;
+            box-shadow: rgba(0, 0, 0, 0.171) 0px 0px 1px 1px;
+        }
+        &__bottomline {
+            width: 95%;
+            height: 20px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+            margin: auto;
+            margin-bottom: 2.5em;
+        }
+    }
+    .additional {
+        grid-area: additional;
+        margin-left: 1.65em;
+        margin-right: 2.5em;
+
+        &__overskrift {
+            color: var(--hovedfarvebrun);
+            font-size: 1.7em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .info-table {
+            border-collapse: collapse;
+
+            &__info {
+                text-transform: uppercase;
+                font-weight: bold;
+                background: rgba(128, 128, 128, 0.199);
+                padding-left: 0.5em;
+                border: 1px solid rgba(128, 128, 128, 0.399);
+                width: 230px;
+            }
+            &__tekst {
+                padding: 0.9em;
+                border: 1px solid rgba(128, 128, 128, 0.399);
+                width: 700px;
+            }
+            &__tekst_aktiv {
+                color: var(--hovedfarvebrun);
+            }
+        }
+    }
+    .footer-kontakt {
+        background: black;
+        height: 30px;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        text-align: center;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: var(--hovedfarvebrun);
+        justify-content: center;
+        background: black;
+    }
+}

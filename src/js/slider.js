@@ -1,14 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    $(function() {
+document.addEventListener('DOMContentLoaded', function () {
+    $(function () {
         let index = 0;
         let nyFoto;
         let fotoListe = ["amplifier", "harbeth", "Pro_ject"];
 
         let textListe = ["PRIMULUNA SOUNDS", "HARBETH SPEAKERS", "PROJECT TURNTABLE"];
 
-
-
-        $("#next").click(function() {
+        $("#next").click(function () {
             if (index < fotoListe.length - 1) {
                 index++;
             } else {
@@ -16,13 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             skift();
             nyFoto = "./assets/img/slider/" + fotoListe[index] + ".jpg";
-            document.querySelector("#big_img").setAttribute("src", nyFoto);
-            document.querySelector("#slider__text_name").textContent = textListe[index];
+            document.querySelector(".frontpage-slider__big-img").setAttribute("src", nyFoto);
+            document.querySelector(".frontpage-slider__text-name").textContent = textListe[index];
         });
 
-
-
-        $("#back").click(function() {
+        $("#back").click(function () {
             if (index > 0) {
                 index--;
             } else {
@@ -30,26 +26,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             skift();
             nyFoto = "./assets/img/slider/" + fotoListe[index] + ".jpg";
-            document.querySelector("#big_img").setAttribute("src", nyFoto);
-            document.querySelector("#slider__text_name").textContent = textListe[index];
+            document.querySelector(".frontpage-slider__big-img").setAttribute("src", nyFoto);
+            document.querySelector(".frontpage-slider__text-name").textContent = textListe[index];
         });
 
-
         function skift() {
-            $("#big_img").attr("src", "./assets/img/slider/" + fotoListe[index] + ".jpg");
-            console.log(index);
+            $("#frontpage-slider__big-img").attr("src", "./assets/img/slider/" + fotoListe[index] + ".jpg");
 
         }
 
     });
-
-    //function slide() {
-    //fotoListe.setAttribute("src", fotoListe[index]);
-    //index++;
-    //if (index >= fotoListe.length) {
-    //index = 0;
-    // }
-    //}
-    //setInterval(slide, 2000);
 
 });
