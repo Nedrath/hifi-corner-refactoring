@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             //henter alle amplifiers
             amplifier.addEventListener('click', function (event) {
                 event.preventDefault();
+                window.history.pushState({},"",event.target.href);
                 let results = data.filter(products => {
                     return products.category.includes('Amplifiers')
 

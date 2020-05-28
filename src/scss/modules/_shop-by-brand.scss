@@ -26,6 +26,8 @@
             font-weight: bold;
             width: 175px;
             margin: auto;
+            place-self: center;
+            display: grid;
 
             &_link {
                 text-decoration: none;
