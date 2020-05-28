@@ -9,7 +9,7 @@
     display: grid;
     max-height: 74px;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 0.4fr 0.4fr 2fr 0.4fr;
     grid-template-areas: "location policy payment social";
     background: #a39161;
     padding: 0.5em;

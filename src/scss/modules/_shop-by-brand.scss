@@ -17,8 +17,8 @@
             text-transform: uppercase;
             font-size: 17px;
             text-decoration: underline;
-            color: black;
-            background-color: rgba(255, 248, 220, 0.589);
+            color: white;
+            background-color: rgba(26, 21, 2, 0.356);
             position: relative;
             top: -130px;
             text-align: center;
@@ -29,7 +29,7 @@
 
             &_link {
                 text-decoration: none;
-                color: black;
+                color: white;
                 background-color: rgba(255, 248, 220, 0.589);
             }
         }
