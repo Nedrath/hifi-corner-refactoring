@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 
                 sortedArray.forEach(produkt => {
                     let div = document.createElement("div");
-                    div.className = "thumbnail";
+                    div.className = "thumbnail-box";
                     div.setAttribute("data-id", produkt.id)
                     div.innerHTML = `
                     <img class="thumbnail__img" src="/images/Produktbilleder/${produkt.image}" alt="${produkt.title}">

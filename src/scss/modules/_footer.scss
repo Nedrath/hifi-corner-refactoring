@@ -11,21 +11,25 @@
     .policy {
         grid-area: policy;
         align-self: center;
+        padding-bottom: 20px;
 
         &__links {
-            font-size: 11px;
+            font-size: 12px;
             text-decoration: none;
             color: white;
             font-weight: 700;
+            
         }
     }
 
     .payment {
         grid-area: payment;
-        align-self: center;
+        display: grid;
+        justify-self: self-end;
+    
 
         &__img {
-            height: 35px;
+            height: 38px;
         }
     }
 
@@ -34,13 +38,14 @@
         place-self: center;
 
         &__icon {
-            font-size: 13px;
+            font-size: 11px;
             color: white;
+            padding-top: 1px;
         }
         &__circle {
             color: white;
-            font-size: 29px;
-            padding-top: 2px;
+            font-size: 25px;
+            padding-top: 5px;
         }
     }
 }

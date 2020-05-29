@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         element.style.display = 'none'
                     });
                     results.forEach(element => {
-                        //console.log(element.id)
                         let selected = document.getElementById('p' + element.sku)
                         selected.style.display = 'block'
 

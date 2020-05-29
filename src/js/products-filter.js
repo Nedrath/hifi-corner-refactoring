@@ -14,13 +14,14 @@ document.addEventListener('DOMContentLoaded', function () {
             //henter alle amplifiers
             amplifier.addEventListener('click', function (event) {
                 event.preventDefault();
+                window.history.pushState({},"",event.target.href);
                 let results = data.filter(products => {
                     return products.category.includes('Amplifiers')
 
                 })
                 console.log(results)
                 if (results) {
-                    let allelm = document.querySelectorAll('.thumbnail')
+                    let allelm = document.querySelectorAll('.thumbnail-box')
                     allelm.forEach(element => {
                         element.style.display = 'none'
                     });
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     return products.category.includes('Speakers')
                 })
                 if (results) {
-                    let allelm = document.querySelectorAll('.thumbnail')
+                    let allelm = document.querySelectorAll('.thumbnail-box')
                     allelm.forEach(element => {
                         element.style.display = 'none'
                     });
@@ -56,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     return products.category.includes('LP Players')
                 })
                 if (results) {
-                    let allelm = document.querySelectorAll('.thumbnail')
+                    let allelm = document.querySelectorAll('.thumbnail-box')
                     allelm.forEach(element => {
                         element.style.display = 'none'
                     });
@@ -74,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     return products.category.includes('CD Players')
                 })
                 if (results) {
-                    let allelm = document.querySelectorAll('.thumbnail')
+                    let allelm = document.querySelectorAll('.thumbnail-box')
                     allelm.forEach(element => {
                         element.style.display = 'none'
                     });
@@ -86,8 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
             })
 
         })
-
-
 
 })
 
