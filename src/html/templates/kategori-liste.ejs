@@ -37,9 +37,8 @@
     </section>
 
     <div class="breadcrumbs">
-        <a class="breadcrumbs__home">Home</a>
+        <a href="/kategori-liste" class="breadcrumbs__home">Home</a>
         <p class="breadcrumbs__seperator">/</p>
-        <a class="breadcrumbs__current-category">Amplifiers</a>
     </div>
 
     <!-- skal laves så den henter informationer fra det nye API -->
@@ -66,14 +65,20 @@
         <p class="shop-aside-left-bottom__filter">Filter</p>
         <p class="shop-aside-left-bottom__filter">PRICE</p>
 
-        <p class="shop-aside-left-bottom__price-range">£0.00 - £.99 </p>
-        <a class="shop-aside-left-bottom__price-range price_1">£0.00 - £799.99</a>
+        <p class="shop-aside-left-bottom__price-range">500 - 2000 kr</p>
+        <a class="shop-aside-left-bottom__price-range price_1">2000 - 4500 kr</a>
 
         <p class="shop-aside-left-bottom__filter">MANUFACTURER</p>
 
-        <p class="shop-aside-left-bottom__manufacturers">Creek</p>
-        <p class="shop-aside-left-bottom__manufacturers">Jolida</p>
-        <p class="shop-aside-left-bottom__manufacturers">Harbeth</p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Creek" id="creek">Creek</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Boesendorfer" id="boesendorfer">Boesendorfer</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Epos" id="epos">Epos</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Exposure" id="exposure">Exposure</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Harbeth" id="harbeth">Harbeth</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Jolida" id="jolida">Jolida</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Manley" id="manley">Manley</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=PArasound" id="parasound">Parasound</a></p>
+        <p class="shop-aside-left-bottom__manufacturers"><a href="?category=Pro-Ject" id="proJect">Pro-Ject</a></p>
     </aside>
 
     <!-- skal laves så den henter informationer fra det nye API og sortere/tilføjer manufactores fra det -->
@@ -81,9 +86,15 @@
         <p class="shop-aside-right__manufacturer"> MANUFACTURER
         </p>
         <p class="shop-aside-right__brands">Creek</p>
-        <p class="shop-aside-right__brands">Jolida</p>
+        <p class="shop-aside-right__brands">Boesendorfer</p>
+        <p class="shop-aside-right__brands">Epos</p>
+        <p class="shop-aside-right__brands">Exposure</p>
         <p class="shop-aside-right__brands">Harbeth</p>
-        <p class="shop-aside-right__viewAll">View All</p>
+        <p class="shop-aside-right__brands">Jolida</p>
+        <p class="shop-aside-right__brands">Manley</p>
+        <p class="shop-aside-right__brands">Parasound</p>
+        <p class="shop-aside-right__brands">Pro-Ject</p>
+        <p class="shop-aside-right__viewAll"><a class="shop-aside-right__viewAll" href="/kategori-liste">View All</a> </p>
     </aside>
 
     <main class="thumbnail-grid">

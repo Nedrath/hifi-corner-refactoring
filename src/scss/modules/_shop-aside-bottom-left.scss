@@ -26,10 +26,11 @@
         font-size: 12px;
     }
 
-    &__manufacturers {
-        margin: 2% 8%;
+    &__manufacturers a {
+        margin: 8%;
         cursor: pointer;
         color: #a39161;
-        font-size: 12px;
+        font-size: 14px;
+        text-decoration: none;
     }
 }
