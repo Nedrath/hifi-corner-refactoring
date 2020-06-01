@@ -1,15 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let price1 = document.querySelector('.price_1');
-    let price2 = document.querySelector(".price_2");
+    let price1 = document.getElementById('price-1');
+    let price2 = document.getElementById("price-2");
 
-    fetch('../data/produkts.json')
+
+    fetch("https://hifi-corner.herokuapp.com/api/v1/products?minPrice=500&maxPrice=1999", {
+        "method": "GET"
+    })
         .then(response => response.json())
         .then(data => {
-            //console.log(data);
+            // console.log(data);
             price1.addEventListener("click", function (event) {
                 event.preventDefault();
-                let results = data.produkter.filter(produkt => {
-                    return +produkt['original-price'].replace("£", "") <= 799
+                let results = data.filter(produkt => {
+                    // console.log(produkt);
+                    return +produkt.price <= 1999;
+
                 });
 
                 if (results) {
@@ -20,24 +25,28 @@ document.addEventListener('DOMContentLoaded', function () {
                         element.setAttribute("hidden", true);
                     });
                     results.forEach(element => {
-                        console.log(element.id)
-                        let selected = document.getElementById('p' + element.id)
+                        // console.log(element.id)
+                        let selected = document.getElementById('p' + element.sku)
                         selected.style.display = 'block';
 
 
                     });
                 }
+                // price1.sort((a, b) => (a.price > b.price ? 1 : -1));
             });
+
         });
 
-    fetch('../data/produkts.json')
+    fetch("https://hifi-corner.herokuapp.com/api/v1/products?minPrice=2000&maxPrice=4500", {
+        "method": "GET"
+    })
         .then(response => response.json())
         .then(data => {
             //console.log(data);
             price2.addEventListener("click", function (event) {
                 event.preventDefault();
-                let results = data.produkter.filter(produkt => {
-                    return +produkt['original-price'].replace("£", "") >= 800 && +produkt['original-price'].replace("£", "") <= 900
+                let results = data.filter(produkt => {
+                    return +produkt.price >= 2000 && +produkt.price <= 4500
                 });
 
                 if (results) {
@@ -48,8 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         element.setAttribute("hidden", true);
                     });
                     results.forEach(element => {
-                        console.log(element.id)
-                        let selected = document.getElementById('p' + element.id)
+                        // console.log(element.id)
+                        let selected = document.getElementById('p' + element.sku)
                         selected.style.display = 'block';
 
 
