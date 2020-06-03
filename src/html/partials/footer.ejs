@@ -1,42 +1,46 @@
 <footer class="footer-grid">
 
-  <div class="location">
+  <address class="location">
     <p class="location__text">HI-FI Corner</p>
     <p class="location__text">Edinburgh 2 joppa Road EH 15 2EU</p>
     <p class="location__text">Falkirk 44 Cow Wynd FK1 1PU</p>
-  </div>
+  </address>
 
-  <div class="policy">
+  <div class="policy" aria-label="her er 2 links til refunds og privacy policy">
     <a class="policy__links" href="#">Return & Refunds</a>
     <a class="policy__links" href="#">Privacy Policy</a>
   </div>
 
   <div class="payment">
-    <img class="payment__img" src="/assets/img/footer/betalings-muligheder.png" alt="">
+    <img class="payment__img" src="/assets/img/footer/betalings-muligheder.png" id="payment-aria" alt="payment-options">
   </div>
 
   <div class="social">
 
     <span class="fa-stack">
-    <i class="fab fa-stack-1x fa-facebook-f social__icon"></i>
+    <i class="fab fa-stack-1x fa-facebook-f social__icon" aria-label="facebook link"></i>
     <i class="far fa-stack-2x fa-circle social__circle"></i>
     </span>
 
     <span class="fa-stack">
-      <i class="fab fa-stack-1x fa-youtube social__icon"></i>
+      <i class="fab fa-stack-1x fa-youtube social__icon" aria-label="youtube link"></i>
       <i class="far fa-stack-2x fa-circle social__circle"></i>
     </span>
 
     <span class="fa-stack">
-      <i class="fab fa-stack-1x fa-twitter social__icon"></i>
+      <i class="fab fa-stack-1x fa-twitter social__icon" aria-label="twitter link"></i>
       <i class="far fa-stack-2x fa-circle social__circle"></i>
     </span>
 
     <span class="fa-stack">
-      <i class="fab fa-stack-1x fa-instagram social__icon"></i>
+      <i class="fab fa-stack-1x fa-instagram social__icon" aria-label="instagram link"></i>
       <i class="far fa-stack-2x fa-circle social__circle"></i>
     </span>
 
+  </div>
+
+  <div aria-labelledby="payment-aria" aria-hidden="true" hidden>
+    dette er betalings mulighederne, visa, mastercard, mobilepay, paypall.
   </div>
 
 </footer>
